@@ -1,15 +1,17 @@
-This repo is an example for how we can run wasm node modules in a node environment.
+This repo demonstrates how we can load a wasm npm module in a node environment, yet we're unable to load the same module
+with Jest.
 
 This repo provides 2 reproducible examples:
 
-1. successfully running an es6 wasm module in node (via `npm run test-node`)
-2. failing to run an es6 wasm module in node with Jest (via `npm run test-jest`)
+1. **in node**: run `npm run test-node` to successfully load the es6 wasm module 
+2. **in node with Jest**: run `npm run test-jest` to see how the same example fails when loading the module with Jest.
 
 Any help with troubleshooting the second example would be great!
 
 ## The tests:
 
-The tests are pretty simple - just loading an es6 wasm module (https://www.npmjs.com/package/bin_packer_3d).
+The tests are pretty simple - just loading an es6 wasm module that I've been working on (https://www.npmjs.com/package/bin_packer_3d).
+
 I have it working in the browser via webpack, and in node. Why can't it work with Jest?
 
 ## Node Version:
