@@ -14,6 +14,9 @@ module.exports = {
   testMatch: ['<rootDir>/__tests__/test_jest.test.?(m)js'],
 
   moduleFileExtensions: [ 'json', 'node', 'tsx', 'ts', 'js', 'jsx','mjs'],
+  "moduleNameMapper": {
+    "bin_packer_3d": "<rootDir>/node_modules/bin_packer_3d/bin_packer_3d_wasm_bg.js"
+  }
   // testPathIgnorePatterns: ['/node_modules/', '/public/'],
   // testPathIgnorePatterns: ['/public/'],
   // setupFilesAfterEnv: [
