@@ -11,7 +11,7 @@ module.exports = {
   // },
 
   // testMatch: [' "**/?(*.)(spec|test).?(m)js?(x)"'],
-  testMatch: ['<rootDir>/__tests__/test_jest.test.?(m)js'],
+  testMatch: ['<rootDir>/test_wasm.?(m)js'],
 
   moduleFileExtensions: [ 'json', 'node', 'tsx', 'ts', 'js', 'jsx','mjs'],
   "moduleNameMapper": {
